@@ -46,3 +46,55 @@
 
 設定が完了したらページ下部の「Create」ボタンを押して確定します。
 
+## 全員: リポジトリをクローンする
+
+GitHub 上のリモートリポジトリの準備ができたら、自分のローカル PC にリポジトリをクローンします。GitHub デスクトップを起動して自分のアカウントにサインインしている状態で「File」メニューの「Clone repository...」を選択してください。
+
+![image](https://user-images.githubusercontent.com/441716/141688622-9b641449-bb0e-49b9-b47c-ab51d812d4f8.png)
+
+クローンするリポジトリを選択するダイアログが表示されます。招待が適切に行われていれば、この一覧に「チームリーダーのアカウント名/GameJam」というリポジトリが表示されているはずなので、これを選択して「Clone」ボタンを押してください。
+
+![image](https://user-images.githubusercontent.com/441716/141688742-e2576ebf-26e6-463d-96d1-ec6e4c8545f3.png)
+
+これで、ローカル PC にリポジトリが複製されました。以降、ここで自分の PC にクローンしたリポジトリをローカルリポジトリ、GitHub 上のリポジトリをリモートリポジトリと呼びます。
+
+## プルリクエストを提出する
+
+自分の PC 上で行った変更はローカルリポジトリにコミットして、目処が付いたところでリモートリポジトリに変更を取り入れるように要望を出します。プルリクエストはブランチ単位で行い、リモートリポジトリの指定のブランチに対して、ローカルリポジトリのブランチを差分として提出します。
+
+まず、修正作業を始める前に main ブランチ以外のプルリクエスト用作業ブランチを作ります。
+
+```
+git branch ブランチ名
+```
+
+作成したブランチに移動します。
+
+```
+git checkout ブランチ名
+```
+
+このブランチで作業し、修正をコミットしていきます。リモートリポジトリに提出できる段階になったら、このブランチをリポートリポジトリに push します。
+
+```
+git push origin ブランチ名
+```
+
+![image](https://user-images.githubusercontent.com/441716/141689417-c592f244-d566-4ad7-8252-29da273a04f0.png)
+
+![image](https://user-images.githubusercontent.com/441716/141689601-3ec7cf6c-744a-42c5-abda-c68855aa3aaf.png)
+
+## プルリクエストをレビューする
+
+修正を main ブランチに受け入れるには、チームメンバーにプルリクエストの内容を確認してもらい approve してもらう必要があります。
+
+![image](https://user-images.githubusercontent.com/441716/141690045-ab009d77-38fa-4513-afc4-21f241c810fb.png)
+
+![image](https://user-images.githubusercontent.com/441716/141690083-1e3f3228-ae91-4af9-ba21-6eaeacdd3eb2.png)
+
+![image](https://user-images.githubusercontent.com/441716/141690171-ebcb9e9c-695d-476c-80ee-3788de6f64a5.png)
+
+![image](https://user-images.githubusercontent.com/441716/141690234-bbc18e43-44c1-44eb-a8cc-8b0d0c09565e.png)
+
+![image](https://user-images.githubusercontent.com/441716/141690662-1be40e66-886e-4e48-aba6-1f14c8ae07cb.png)
+
