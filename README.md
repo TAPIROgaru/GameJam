@@ -64,19 +64,19 @@ GitHub 上のリモートリポジトリの準備ができたら、自分のロ�
 
 まず、修正作業を始める前に main ブランチ以外のプルリクエスト用作業ブランチを作ります。
 
-```
+``` text
 git branch ブランチ名
 ```
 
 作成したブランチに移動します。
 
-```
+``` text
 git checkout ブランチ名
 ```
 
 このブランチで作業し、修正をコミットしていきます。リモートリポジトリに提出できる段階になったら、このブランチをリポートリポジトリに push します。
 
-```
+``` text
 git push origin ブランチ名
 ```
 
@@ -97,4 +97,3 @@ git push origin ブランチ名
 ![image](https://user-images.githubusercontent.com/441716/141690234-bbc18e43-44c1-44eb-a8cc-8b0d0c09565e.png)
 
 ![image](https://user-images.githubusercontent.com/441716/141690662-1be40e66-886e-4e48-aba6-1f14c8ae07cb.png)
-
