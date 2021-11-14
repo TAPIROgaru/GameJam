@@ -90,10 +90,22 @@ git push origin ブランチ名
 
 ![image](https://user-images.githubusercontent.com/441716/141690045-ab009d77-38fa-4513-afc4-21f241c810fb.png)
 
-![image](https://user-images.githubusercontent.com/441716/141690083-1e3f3228-ae91-4af9-ba21-6eaeacdd3eb2.png)
-
-![image](https://user-images.githubusercontent.com/441716/141690171-ebcb9e9c-695d-476c-80ee-3788de6f64a5.png)
+もし、レビューをして問題が見つかった場合は、差分コードの修正部分をクリックしてコメントします。
 
 ![image](https://user-images.githubusercontent.com/441716/141690234-bbc18e43-44c1-44eb-a8cc-8b0d0c09565e.png)
 
+このとき、即コメントを反映させる場合は「Add single comment」ボタンを、後でレビューとしてまとめるなら「Start a review」ボタン（レビューコメントを追加済みなら「Add review comment」ボタン）押してください。
+
+レビューが終了したら「Review changes」ボタンを押して、レビューを送信します。
+
+![image](https://user-images.githubusercontent.com/441716/141690083-1e3f3228-ae91-4af9-ba21-6eaeacdd3eb2.png)
+
+変更に問題がなければ「Approve」を選択します。変更に問題を見つけた場合は該当箇所にコメントして「Request changes」で修正を要求審査う。最後に「Submit review」で確定します。
+
+![image](https://user-images.githubusercontent.com/441716/141690171-ebcb9e9c-695d-476c-80ee-3788de6f64a5.png)
+
+レビューでチームメンバーがプルリクエストを approve することで、本体である main ブランチに変更を merge できるようになります。
+
 ![image](https://user-images.githubusercontent.com/441716/141690662-1be40e66-886e-4e48-aba6-1f14c8ae07cb.png)
+
+チームリーダーは確認の上、レビューが通ったプルリクエストを merge してください。
