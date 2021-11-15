@@ -62,27 +62,37 @@ GitHub 上のリモートリポジトリの準備ができたら、自分のロ�
 
 自分の PC 上で行った変更はローカルリポジトリにコミットして、目処が付いたところでリモートリポジトリに変更を取り入れるように要望を出します。プルリクエストはブランチ単位で行い、リモートリポジトリの指定のブランチに対して、ローカルリポジトリのブランチを差分として提出します。
 
-まず、修正作業を始める前に main ブランチ以外のプルリクエスト用作業ブランチを作ります。
+まず、作業を始める前に main ブランチ以外のプルリクエスト用作業ブランチを作ります。
 
-``` text
-git branch ブランチ名
-```
+GitHub Desktop の「Current branch」をクリックし、ブランチ名の検索フィルターに咲く際したいブランチ名を入力します。指定のブランチが存在しないので「Create new branch」ボタンが表示されるので押してください。
 
-作成したブランチに移動します。
+![image](https://user-images.githubusercontent.com/441716/141818529-a0d47b75-71d6-4f8e-a927-e194530ad50d.png)
 
-``` text
-git checkout ブランチ名
-```
+「Create a branch」ダイアログが表示されるので、ブランチ名を確認して「Create branch」ボタンを押します。ブランチ名は他のブランチ名と衝突しなければ任意ですが、チーム内で衝突せず分かりやすいルールを作るべきでしょう。（例えば "アカウント名/作業名" など）
 
-このブランチで作業し、修正をコミットしていきます。リモートリポジトリに提出できる段階になったら、このブランチをリポートリポジトリに push します。
+![image](https://user-images.githubusercontent.com/441716/141819748-19829229-dae9-4aea-a1d5-f34042a3bd28.png)
 
-``` text
-git push origin ブランチ名
-```
+これで新しいブランチが作成され、そのブランチに移動（チェックアウト）できました。
 
-![image](https://user-images.githubusercontent.com/441716/141689417-c592f244-d566-4ad7-8252-29da273a04f0.png)
+各人の修正作業は自分の作業ブランチで行い、修正をコミットしていきます。例えば、リポジトリ直下に「プルリクエスト.txt」というテキストファイルを作成し、適当なメッセージを書いてみましょう。ファイルを保存して GitHub Desktop に戻ると､変更差分が表示されます。
 
-![image](https://user-images.githubusercontent.com/441716/141689601-3ec7cf6c-744a-42c5-abda-c68855aa3aaf.png)
+「Changes」からコミットするファイルにチェックを入れ、コミットメッセージを追加して「Commit to ブランチ名」ボタンを押してください。
+
+![image](https://user-images.githubusercontent.com/441716/141823876-bf96b8e2-f402-4207-937d-8820f4aac072.png)
+
+次にチームで共有しているリモートリポジトリに現在のブランチにコミットした内容を送信します。右側の「Publish branch」ボタンを押してください。git 用語ではこの操作を push と呼びますが、GitHub Desktop では Publish と呼んでいます。
+
+![image](https://user-images.githubusercontent.com/441716/141824676-77d41fae-c14e-4aa5-88ee-dab81e8f6daf.png)
+
+リモートリポジトリに push した後、リポジトリのトップページを見てください。画面上部に「Compare & pull request」というボタンが表示されているはずなので、それをクリックします。表示されていない場合は、正しく push できているかブランチを確認してください。
+
+![image](https://user-images.githubusercontent.com/441716/141826686-7b001cc5-6c9d-4eee-b552-f659edc7ea6c.png)
+
+「Open a pull request」ページに移動するので base ブランチに main、compare ブランチに送信した自分のブランチ名が選択されていることを確認してください。問題なければ、プルリクエストのタイトルと説明を入力して「Create pull request」ボタンを押します。
+
+![image](https://user-images.githubusercontent.com/441716/141827337-e0d7469a-05f2-4b31-abf3-e8103551ef5f.png)
+
+これで、リポジトリにプルリクエストが提出されました。リポジトリの 「Pull requests」タブを選択してください。他のチームメンバーからもプルリクエストが見えているはずです。
 
 ## プルリクエストをレビューする
 
