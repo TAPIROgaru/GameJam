@@ -94,23 +94,29 @@ GitHub Desktop の「Current branch」をクリックし、ブランチ名の検
 
 これで、リポジトリにプルリクエストが提出されました。リポジトリの 「Pull requests」タブを選択してください。他のチームメンバーからもプルリクエストが見えているはずです。
 
+![image](https://user-images.githubusercontent.com/441716/141828029-cbb2baaa-391b-4e5c-8ae6-c477d4581625.png)
+
 ## プルリクエストをレビューする
 
-修正を main ブランチに受け入れるには、チームメンバーにプルリクエストの内容を確認してもらい approve してもらう必要があります。
+修正を main ブランチに受け入れるには、提出者とは別のチームメンバーにプルリクエストの内容を確認してもらい approve してもらう必要があります。これをレビューと呼びます。レビューが通らなければ、変更を main ブランチに取り込めないように設定しています。
 
-![image](https://user-images.githubusercontent.com/441716/141690045-ab009d77-38fa-4513-afc4-21f241c810fb.png)
+プルリクエストのページから「Files changed」タブを選択してください。
 
-もし、レビューをして問題が見つかった場合は、差分コードの修正部分をクリックしてコメントします。
+![image](https://user-images.githubusercontent.com/441716/141828179-0473695c-693d-4667-98ed-67dcfc21ee87.png)
 
-![image](https://user-images.githubusercontent.com/441716/141690234-bbc18e43-44c1-44eb-a8cc-8b0d0c09565e.png)
+もし、レビューをして問題が見つかった場合は、差分コードの修正部分をクリックしてコメントを残します。コメントは公開され、プルリクエストの提出者にはメール等で通知されます。
 
-このとき、即コメントを反映させる場合は「Add single comment」ボタンを、後でレビューとしてまとめるなら「Start a review」ボタン（レビューコメントを追加済みなら「Add review comment」ボタン）押してください。
+![image](https://user-images.githubusercontent.com/441716/141828635-11daa4ba-568c-4d8e-9c41-0d5234d9a401.png)
 
-レビューが終了したら「Review changes」ボタンを押して、レビューを送信します。
+このとき、即コメントを反映させる場合は「Add single comment」ボタンを、複数箇所にコメントして最後にまとめて通知するなら「Start a review」ボタン（レビューコメントを追加済みなら「Add review comment」ボタン）押してください。
 
-![image](https://user-images.githubusercontent.com/441716/141690083-1e3f3228-ae91-4af9-ba21-6eaeacdd3eb2.png)
+レビューが終了したら「Review changes」ボタン（レビュー中なら「Finish you review」ボタン）を押して、レビューを送信します。
 
-変更に問題がなければ「Approve」を選択します。変更に問題を見つけた場合は該当箇所にコメントして「Request changes」で修正を要求審査う。最後に「Submit review」で確定します。
+![image](https://user-images.githubusercontent.com/441716/141829356-cbd861c7-f618-4409-9b2c-35d1c7e3f97e.png)
+
+変更に問題がなければ「Approve」を選択します。変更に問題を見つけた場合は該当箇所にコメントして「Request changes」で修正を要求しましょう。なお、自分のプルリクエストに対して、自分で approve や request changes はできません。レビューは他のチームメンバーにお願いしましょう。
+
+最後に「Submit review」でレビュー確定します。
 
 ![image](https://user-images.githubusercontent.com/441716/141690171-ebcb9e9c-695d-476c-80ee-3788de6f64a5.png)
 
