@@ -59,9 +59,7 @@ public class click : MonoBehaviour
             button.transform.position = rt.position;
 
             _count = 0;
-            Debug.Log("a");
         }
-        Debug.Log("b");
         _count++;
     }
 }
