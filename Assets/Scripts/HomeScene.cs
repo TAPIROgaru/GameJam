@@ -28,14 +28,17 @@ public class HomeScene : MonoBehaviour
         });
     }
 
-    private void Func()
+    private void Update()
     {
+
         foreach (var item in Game.Instance.ItemMasters)
         {
-            if (item.name == "")
+            if (item.Name == "アイテム2")
             {
-                Game.Instance.ItemInventory.GetCount(item);
+                _quantity = Game.Instance.ItemInventory.GetCount(item) + 1;
             }
         }
     }
+
+    
 }
