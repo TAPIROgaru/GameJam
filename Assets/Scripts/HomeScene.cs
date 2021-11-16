@@ -21,12 +21,10 @@ public class HomeScene : MonoBehaviour
         var game = Game.Instance;
         _score.DataSource = game.CashInventory;
 
-        var e = new Button.ButtonClickedEvent();
-        e.AddListener(() =>
+        _scoreButton.onClick.AddListener(() =>
         {
             var c = new Currency(_currencyType, _quantity);
             var cc = game.CashInventory.Add(c);
         });
-        _scoreButton.onClick = e;
     }
 }
