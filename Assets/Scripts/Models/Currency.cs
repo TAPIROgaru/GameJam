@@ -14,9 +14,9 @@ namespace ClickerGame.Models
         None,
 
         /// <summary>
-        /// ゴールド。
+        /// 髪の毛。
         /// </summary>
-        Gold,
+        Hair,
     }
 
     /// <summary>
