@@ -33,7 +33,7 @@ public class HomeScene : MonoBehaviour
 
         foreach (var item in Game.Instance.ItemMasters)
         {
-            if (item.Name == "育毛剤Lv.UP")
+            if (item.Name == "アイテム2")
             {
                 _quantity = Game.Instance.ItemInventory.GetCount(item) + 1;
             }
