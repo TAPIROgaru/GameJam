@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44f80b1b83c69449b8c692d6af7b6d, type: 3}
   m_Name: Item1
   m_EditorClassIdentifier: 
-  _name: "\u30A2\u30A4\u30C6\u30E01"
-  _sprite: {fileID: 21300000, guid: 2c79be828ae0fa3419d95aa8641f9b53, type: 3}
+  _name: "\u982D\u76AE\u30DE\u30C3\u30B5\u30FC\u30B8"
+  _sprite: {fileID: 21300000, guid: 486d19a6103f352499d04ea7558ced76, type: 3}
   _price:
     _type: 1
-    _quantity: 10
+    _quantity: 20
   _productivities:
   - _type: 1
-    _quantity: 0.1
+    _quantity: 0.05
