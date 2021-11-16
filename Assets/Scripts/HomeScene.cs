@@ -14,7 +14,7 @@ public class HomeScene : MonoBehaviour
     private CurrencyType _currencyType = CurrencyType.None;
 
     [SerializeField]
-    private double _quantity = 1;
+    public double _quantity = 1;
 
     void Start()
     {
@@ -26,5 +26,16 @@ public class HomeScene : MonoBehaviour
             var c = new Currency(_currencyType, _quantity);
             var cc = game.CashInventory.Add(c);
         });
+    }
+
+    private void Func()
+    {
+        foreach (var item in Game.Instance.ItemMasters)
+        {
+            if (item.name == "")
+            {
+                Game.Instance.ItemInventory.GetCount(item);
+            }
+        }
     }
 }
