@@ -18,10 +18,15 @@ public class click : MonoBehaviour
 
     private Vector3 move;
 
+    private const int value = 20;
+
+    private int _count = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        move = (destination.position - start.position) / 5;
+        //button.onClick.AddListener(Taira_OnClick);
+        move = (destination.position - start.position) / value;
     }
 
     // Update is called once per frame
@@ -30,7 +35,7 @@ public class click : MonoBehaviour
         Taira_Move();
     }
 
-    void Taira_OnClick()
+    public void Taira_OnClick()
     {
         _click = true;
         button.transform.position = start.position;
@@ -39,13 +44,24 @@ public class click : MonoBehaviour
     {
         if (!_click) { return; }
 
-        Vector3 pos = button.transform.position;
-        pos += move;
-        button.transform.position = pos;
+        var rt = (RectTransform)button.transform;
+        rt.position += move;
+        button.transform.position = rt.position;
 
-        if (button.transform.position == destination.position)
+        
+
+        if (_count == value)
         {
             _click = false;
+
+            var rt_ = (RectTransform)button.transform;
+            rt_.position = start.position;
+            button.transform.position = rt.position;
+
+            _count = 0;
+            Debug.Log("a");
         }
+        Debug.Log("b");
+        _count++;
     }
 }
