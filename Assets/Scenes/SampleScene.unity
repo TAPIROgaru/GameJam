@@ -1019,8 +1019,6 @@ MonoBehaviour:
   _items:
   - {fileID: 11400000, guid: 4364e0e3c6958234aa33b9e84c14a642, type: 2}
   - {fileID: 11400000, guid: 1d8352f474f657c46a2c9e3ad7e00560, type: 2}
-  - {fileID: 11400000, guid: e74c90e2d0475be459abcbd47af5b1e2, type: 2}
-  - {fileID: 11400000, guid: 56aad1bbbf31e024c9da0ead6975ae93, type: 2}
   _enhancers:
   - {fileID: 11400000, guid: ccab7e546d7799a41adf706d25dc0bd3, type: 2}
 --- !u!4 &365046582
