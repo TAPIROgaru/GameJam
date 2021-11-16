@@ -68,6 +68,20 @@ namespace ClickerGame.Models
         }
 
         /// <summary>
+        /// 保有している全アイテムの総数を取得する。
+        /// </summary>
+        /// <returns>保有している全アイテムの総数</returns>
+        public int GetCountAll()
+        {
+            var sum = 0;
+            foreach(var key in _items.Keys)
+            {
+                sum += _items[key];
+            }
+            return sum;
+        }
+
+        /// <summary>
         /// 価格を取得する。
         /// </summary>
         /// <param name="item"></param>
